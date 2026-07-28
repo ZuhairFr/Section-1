@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
+    <title>Subscription Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #E5E6E4;
+        }
+        .big-card {
+            /* border: 2px solid black; */
+            padding: 0px 100px;
+            margin: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            background-color: #FBFBF2;
+            box-shadow: 0px 10px 10px 0px black;
+        }
+
+        .cards {
+            display: flex;
+            gap: 40px;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            height: 200px;
+        }
+
+        .card {
+            background-color: rgb(246, 242, 242);
+            /* border: 2px solid black; */
+            width: 200px;
+            height: 260px;
+            margin: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            border-radius: 15px;
+        }
+
+        .card p,h4 {
+            margin-left: 20px;
+        }
+
+        .logo {
+        margin: 20px 0px 0px 20px;
+
+        }
+
+        .logo img {
+            width: 25px;
+        }
+
+        .btn-add {
+              background-color: white;
+            color: black;
+            width: 60%;
+            border-radius: 20px;
+            align-self: center;
+            height: 16%;
+            border: none;
+            box-shadow: 0px 5px 10px 0px black;
+            margin: auto;
+        }
+
+        .btn-add:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            border: 1px solid black;
+        }
+
+        #card1 {
+            box-shadow: -10px -10px  rgba(242, 9, 9, 0.395);
+        }
+
+        #card2 {
+            box-shadow: -12px -12px  rgba(235, 7, 235, 0.459);
+        }
+
+        #card3 {
+            box-shadow: -10px -10px  rgba(16, 16, 240, 0.331);
+        }
+
+
+        .big-btn {
+            background-color: black;
+            color: white;
+            width: 40%;
+            border-radius: 20px;
+            align-self: center;
+            height: 40px;
+            border: none;
+            font-family: 'Times New Roman', Times, serif;
+            box-shadow: 0px 5px 10px 0px black;
+            margin: 15px;
+        }
+
+        .big-btn:hover {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            border: 1px solid black;
+        }
+
+        .p2 {
+        margin-left: 20px;
+        }
+        
+        .price {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .month {
+        font-size: 18px;
+        font-weight: normal;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="big-card">
+        <div class="text">
+            <h1>Get the most out of your mobile <br> with the right subscription</h1>
+            <p>All devices come with free delivery or pickup as standard. <br>See information on available shopping options for your location.</p>
+        </div>
+        <div class="cards">
+        <div id="card1" class="card">
+            <div class="logo">
+                <img src="airtel-logo-icon.webp" alt="">
+            </div>
+            <br>
+            <h4>Airtel 10 GB</h4>
+            <br>
+            <p class="p1">Up to 100Mbit/s</p>
+            <br>
+            <p class="p2">
+            <span class="price">299,-</span>
+            <span class="month">/month</span>
+            </p>
+            <button class="btn-add">Add Subscription</button>
+
+        </div>
+        <div id="card2" class="card">
+             <div class="logo">
+                <img src="jio-logo.webp" alt="">
+            </div>
+            <br>
+            <h4>Jio 15 GB</h4>
+            <br>
+            <p class="p1">Unlimited calls,SMS and MMS</p>
+            <br>
+            <p class="p2">
+            <span class="price">953,-</span>
+            <span class="month">/month</span>
+            </p>
+            <button class="btn-add">Add Subscription</button>
+        </div>
+        <div id="card3" class="card">
+            <div class="logo">
+                <img src="telenor-logo-icon.webp" alt="">
+            </div>
+            <br>
+            <h4>Telenor Next Fast</h4>
+            <br>
+            <p class="p1">Up to 100Mbit/s</p>
+            <br>
+            <p class="p2">
+            <span class="price">1028,-</span>
+            <span class="month">/month</span>
+            </p>
+            <button class="btn-add">Add Subscription</button>
+        </div>
+        </div>
+
+         <button class="big-btn">See all subscriptions</button>
+    </div>
+</body>
+</html>

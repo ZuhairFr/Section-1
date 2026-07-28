@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <title>Contact Page</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        * a {
+            text-decoration: none;
+            color: black;
+        }
+
+        * a:hover {
+            color: blue;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+
+        .big-card {
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            height: 80vh;
+            width: 80%;
+            border-radius: 20px;
+            box-shadow: -9px -8px 9px rgba(0, 0, 0, 0.436);
+        }
+
+        header {
+            height: 90px;
+            /* border: 2px solid rgb(118, 116, 116); */
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 80px;
+            border-radius: 100%;
+        }
+        
+        .nav-links {
+            width: 80%;
+        }
+        .nav-links ul {
+            margin-left: 15px;
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .btn-logIn {
+            width: 120px;
+            height: 45px;
+            margin-right: 15px;
+            border: none;
+            border-radius: 6px;
+            background: royalblue;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn-signUp {
+            width: 120px;
+            height: 45px;
+            margin-right: 15px;
+            border: none;
+            border-radius: 6px;
+            background: royalblue;
+            color: white;
+            cursor: pointer;
+            align-self: ;
+        }
+
+        .cards {
+            display: flex;
+            height: calc(100% - 90px);
+        }
+
+        .right-panel {
+            flex: 1;
+            /* border: 2px solid black; */
+            padding: 40px;
+        }
+
+       
+
+        
+        .left-panel {
+            flex: 1;
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .left-top {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+
+         .left-mid {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .left-mid ul {
+            list-style: none;
+        }
+
+         .left-bottom {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .left-bottom ul {
+            list-style: none;
+        }
+
+        form{
+            margin-top: 30px;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        input,textarea {
+            margin-top: 4px;
+            width: 200px;
+            padding: 2px;
+            font-size: 10px;
+        }
+
+        .btn-submit {
+            width: 30%;
+            margin-top: 20px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            background: royalblue;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: black;
+            border: 2px solid royalblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="big-card">
+        <header>
+            <div class="logo">
+                <img src="Why99d_logo-design.webp" alt="">
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Collection</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </nav>
+
+            <button class="btn-logIn btn">LogIn</button>
+
+            <button class="btn-signUp btn">Sign up</button>
+        </header>
+
+    <div class="cards">
+        <div class="left-panel">
+            <div class="left-top">
+                <h2>Contact Information</h2>
+                <p>Fill up this form and our team will get back <br> to you within 24 hours</p>
+            </div>
+            <div class="left-mid">
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> 1234 Street,city</li>
+                    <li><i class="fa-solid fa-phone"></i> +91 1234567890 </li>
+                    <li><i class="fa-solid fa-envelope"></i> blah@gmail.com</li>
+                </ul>
+            </div>
+            <div class="left-bottom">
+                <ul>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Discord</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <h1>Get in touch</h1>
+            <p>Any question or remarks? Just write a message.</p>
+
+            <form>
+                <div class="form-row">
+
+                    <div class="input-group">
+                        <label for="">Name</label>
+                        <input type="text" placeholder="Enter your name">
+
+                        <label for="">Message</label>
+                        <input type="text" placeholder="Enter your message">
+
+                        <label for="">Email ID</label>
+                        <input type="email" placeholder="Enter your email">
+
+                        <label for="">Phone</label>
+                        <input type="number" placeholder="Enter your number">
+
+                        <button class="btn-submit btn">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
